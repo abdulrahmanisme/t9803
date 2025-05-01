@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="mzrhe05pvjMBvHnx6Zs0uq04tQajSA_Whe_-Cl12LGY" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-99C8F3BX84"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-99C8F3BX84', {
+        'performance': true,
+        'send_page_view': true,
+        'anonymize_ip': true,
+        'cookie_domain': 'auto',
+        'cookie_flags': 'SameSite=None;Secure'
+      });
+    </script>
+    <title>Admissions App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+      // Redirect to TrackPage from /application-tracker
+      if (window.location.pathname === '/application-tracker') {
+        console.log('Redirecting from /application-tracker to /track');
+        // Option 1: Change URL without page refresh (preferred for SPA)
+        window.history.replaceState(null, '', '/track');
+        
+        // Option 2: Redirect if history API doesn't work
+        setTimeout(function() {
+          if (window.location.pathname === '/application-tracker') {
+            window.location.href = '/track';
+          }
+        }, 100);
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-DnSdnrXI.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-CpT81wZu.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-DHI68Y_p.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-FD8-jWqD.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
